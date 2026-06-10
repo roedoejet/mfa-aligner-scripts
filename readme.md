@@ -28,9 +28,20 @@ You can build this from a metadata.psv file and a wavs folder using `scripts/dat
 
 ### Build the dict
 
-The dictionary takes a tsv file with a word in column 1 and a space-separated list of alignable units (i.e. phonemes) in column 2.
+The dictionary takes a tsv file with a word in column 1 and a space-separated list of alignable units (i.e. phonemes) in column 2:
 
-You can build a character-level dictionary with `scripts/dict_builder-character.py`. You can build a grapheme-level dictionary (digraphs/multigraphs supported) with `scripts/dict_builder-grapheme.py`
+```tsv
+hello h e l l o
+```
+
+or
+
+```tsv
+hello h ə l o ʊ
+```
+
+
+You can build a character-level dictionary from a metadata.psv file with `scripts/dict_builder-character.py`. You can build a grapheme-level dictionary (digraphs/multigraphs supported) with `scripts/dict_builder-grapheme.py`
 
 ### Train
 
